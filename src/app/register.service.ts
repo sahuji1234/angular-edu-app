@@ -7,7 +7,7 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class RegisterService {
-  private baseUrl="http://localhost:9192/login";
+  private baseUrl="http://localhost:9192/register";
   constructor(private httpClient:HttpClient) { }
 
   registerUser(user:User):Observable<any>{

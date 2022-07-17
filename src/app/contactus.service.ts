@@ -7,7 +7,7 @@ import { Contatcus } from './contatcus';
   providedIn: 'root'
 })
 export class ContactusService {
-  private baseUrl="http://localhost:9192/login";
+  private baseUrl="http://localhost:9192/contact-us";
   constructor(private httpClient:HttpClient) { }
 
   conatctUs(contactUs:Contatcus):Observable<any>{
