@@ -21,6 +21,7 @@ const routes: Routes = [
 {path: 'juniors' , component: JuniorsComponent},
 {path: 'contact' , component: ContactComponent},
 {path: 'forget' , component: ForgetpasswordComponent},
+{path: '' , component: HomeComponent},
 
 
 
