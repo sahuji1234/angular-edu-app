@@ -8,25 +8,25 @@
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
-              <form>
+              <form  (ngSubmit)="userRegister()" method="POST" >
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" required="true"  />
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" required="true" [(ngModel)]="user.username" />
                   <label class="form-label" for="form3Example1cg">Your Name</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" required="true" />
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" required="true" [(ngModel)]="user.email" />
                   <label class="form-label" for="form3Example3cg">Your Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" required="true"  />
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" required="true" [(ngModel)]="user.password" />
                   <label class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg" maxlength="25" required="true" />
+                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg" maxlength="25" required="true" [(ngModel)]="user.number" />
                   <label class="form-label" for="form3Example4cdg">Mobile Number</label>
                 </div>
 

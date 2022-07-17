@@ -14,6 +14,8 @@ import { KidsComponent } from './kids/kids.component';
 import { SeniorsComponent } from './seniors/seniors.component';
 import { JuniorsComponent } from './juniors/juniors.component';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

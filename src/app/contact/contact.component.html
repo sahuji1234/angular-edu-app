@@ -1,18 +1,19 @@
 <div class="container fluid mt-5 col-md-5">
-<form>
 
+
+  <form (ngSubmit)="contact()" method="POST">
     <div class="mb-3">
        <h2>Get in touch with us</h2>
       </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true" [(ngModel)]="conatctUs.email" />
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label" >Post your question</label>
-      <input type="text" class="form-control" id="exampleInputPassword1" required="true">
+      <input type="text" class="form-control" id="exampleInputPassword1" required="true" [(ngModel)]="conatctUs.question" />
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
